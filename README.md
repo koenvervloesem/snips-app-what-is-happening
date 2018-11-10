@@ -7,7 +7,9 @@ The easiest way to install this skill is by adding the Snips app [What is happen
 The `calendar` program is installed by default on Raspbian and many other Linux distributions. If not, you can find it in the package `bsdmainutils`. Install it with `sudo apt install bsdmainutils` on a Debian- or Ubuntu-based system.
 
 ## Configuration
-If you want to change the default calendar, you can specify this in the user parameter `default_calendar`, in Snips Console, by editing the `config.ini` file of the app manually or by a voice command. If you want to use a combination of calendars by default, leave the `default_calendar` parameter in this app empty, and then execute this command:
+If you want to change the default calendar, you can specify this in the user parameter `default_calendar`, in Snips Console, by editing the `config.ini` file of the app manually or by a voice command (if the config.ini file is writable: chmod a+w /var/lib/snips/skills/snips-app-what-is-happening/config.ini).
+
+If you want to use a combination of calendars by default, leave the `default_calendar` parameter in this app empty, and then execute this command:
 
 ```
 sudo cp /usr/share/calendar/calendar.all /etc/calendar/
