@@ -2,7 +2,7 @@
 With this [Snips](https://snips.ai/) skill, you can ask your voice assistant about today's or any other day's events. This app knows about births and deaths of famous people, holidays, historical events, and so on. The app gets its information from the Linux program `calendar`, hence it's able to work offline.
 
 ## Installation
-The easiest way to install this skill is by adding the Snips app [What is happening on this day](TODO) to your assistant in the [Snips Console](https://console.snips.ai).
+The easiest way to install this skill is by adding the Snips app [What is happening on this day](https://console.snips.ai/store/en/skill_mN45remOonk) to your assistant in the [Snips Console](https://console.snips.ai).
 
 The `calendar` program is installed by default on Raspbian and many other Linux distributions. If not, you can find it in the package `bsdmainutils`. Install it with `sudo apt install bsdmainutils` on a Debian- or Ubuntu-based system.
 
