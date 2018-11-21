@@ -37,12 +37,26 @@ class TestCalendarCommand(TestCase):
         # $
         self.assertEqual(len(events), 0)
 
+    def test_events_with_asterisk(self):
+        """
+        Test the events method from CalendarCommand with an asterisk after the date.
+        """
+        events = self.command.events("world", "20181121")
+        # $ calendar -A 0 -f world -t 20181121
+        # Nov 21  Announcement of 18 1/2 minute gap on Watergate tape, 1973
+        # Nov 21* Day of Prayer and Repentance (Buss- und Bettag) in Federal Republic of Germany
+        self.assertEqual(len(events), 2)
+        self.assertEqual(events[0],
+                         'Nov 21. Announcement of 18 1/2 minute gap on Watergate tape, 1973')
+        self.assertEqual(events[1],
+                         'Nov 21. Day of Prayer and Repentance (Buss- und Bettag) in Federal Republic of Germany')
+
     def test_multiline_events(self):
         """
         Test the events method from CalendarCommand with multi-line events.
         """
-        events = self.command.events("", "20181030")
-        # $ calendar -A 0 -t 20181030
+        events = self.command.events("world", "20181030")
+        # $ calendar -A 0 -f world -t 20181030
         # Oct 30  John Adams, 2nd President of the United States, born Quincy,
         #                 Massachusetts 1735.
         # Oct 30  Orson Welles' "War of the Worlds" broadcast, 1938

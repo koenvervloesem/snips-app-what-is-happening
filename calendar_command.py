@@ -74,4 +74,6 @@ class CalendarCommand(object):
 
         # Substitute multiple whitespaces by one space.
         events = [' '.join(event.split()) for event in lines_copy[:index]]
-        return [event[:6] + '.' + event[6:] for event in events]
+        # Create a sentence with the date and a new sentence with the description.
+        # Strip the asterisk (*) after a date. This means the date changes from year to year.
+        return [event[:6] + '.' + event[6:].strip("*") for event in events]
