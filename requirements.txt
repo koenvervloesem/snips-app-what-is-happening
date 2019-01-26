@@ -1,7 +1,2 @@
-# Bindings for the hermes protocol 
 hermes-python>=0.1
-
-# More dependency goes here.. 
-
-# TODO: Temporary solution
-future==0.16
+toml

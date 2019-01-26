@@ -10,6 +10,7 @@ from hermes_python.hermes import Hermes
 from snips_tools import SnipsConfigParser
 import tools_what_is_happening as tools
 import calendar_command as cal
+import toml
 
 CONFIG_INI = "config.ini"
 
@@ -23,13 +24,6 @@ RESULT_DEFAULT_CALENDAR = "My default calendar is {}."
 RESULT_LIST = "This is the list of calendars you can choose: "
 RESULT_RESET = "I have reset your default calendar."
 RESULT_DEFAULT_CHANGED = "I have changed your default calendar to {}."
-
-# If this skill is supposed to run on the satellite,
-# please get this mqtt connection info from <config.ini>
-# Hint: MQTT server is always running on the master device
-MQTT_IP_ADDR = "localhost"
-MQTT_PORT = 1883
-MQTT_ADDR = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
 
 
 class WhatIsHappening(object):
@@ -132,7 +126,14 @@ class WhatIsHappening(object):
 
     def start_blocking(self):
         """Register callback function and start MQTT"""
-        with Hermes(MQTT_ADDR) as hermes:
+        # Get the MQTT host and port from /etc/snips.toml.
+        try:
+            mqtt_addr = toml.load('/etc/snips.toml')['snips-common']['mqtt']
+        except KeyError:
+            # If the mqtt key doesn't exist, use the default value.
+            mqtt_addr = 'localhost:1883'
+
+        with Hermes(mqtt_addr) as hermes:
             hermes.subscribe_intents(self.master_callback).start()
 
 
