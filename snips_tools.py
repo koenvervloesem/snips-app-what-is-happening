@@ -1,17 +1,17 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 This module contains a utility class to work with the configuration file
 for the Snips skill.
 """
 
-import ConfigParser
+import configparser
 import io
 
 CONFIGURATION_ENCODING_FORMAT = "utf-8"
 
 
-class SnipsConfigParser(ConfigParser.SafeConfigParser):
+class SnipsConfigParser(configparser.SafeConfigParser):
     """This is a utility class to read and write the configuration file."""
 
     def to_dict(self):

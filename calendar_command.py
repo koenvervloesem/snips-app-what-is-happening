@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """This module contains a class to interface with the Unix calendar command"""
 
@@ -61,7 +61,7 @@ class CalendarCommand(object):
 
         calendar_output = subprocess.check_output(command).decode("utf-8")
         # Split the lines and filter the empty lines.
-        lines = filter(None, calendar_output.split("\n"))
+        lines = [line for line in calendar_output.split("\n") if line]
         lines_copy = list(lines)
         index = 0
         for event in lines:
