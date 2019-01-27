@@ -31,6 +31,5 @@ then
     pip3 install -r requirements.txt
 
 else
-    echo "Cannot find Python 3. Please install it."
+    >&2 echo "Cannot find Python 3. Please install it."
 fi
-
