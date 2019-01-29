@@ -1,2 +1,3 @@
-hermes-python>=0.1
+# Our Python 3 code needs the bugfix for deserialization of TimeIntervalValue in hermes_python.
+hermes-python>=0.1.29
 toml
