@@ -1,9 +1,12 @@
 matrix:
   include:
     - language: python
-      python:
-        - 3.5
-        - 3.6
+      python: 3.5
+      script:
+        - ./setup.sh
+        - python3 test_action_what_is_happening.py
+    - language: python
+      python: 3.6
       script:
         - ./setup.sh
         - python3 test_action_what_is_happening.py
