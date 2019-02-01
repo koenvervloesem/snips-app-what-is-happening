@@ -1,8 +1,14 @@
-language: python
-python:
-  - 3.5
-  - 3.6
-install:
-  - pip3 install -r requirements.txt
-script:
-  - python3 test_action_what_is_happening.py
+matrix:
+  include:
+    - language: python
+      python:
+        - 3.5
+        - 3.6
+      script:
+        - ./setup.sh
+        - python3 test_action_what_is_happening.py
+    - language: bash
+      install: pip3 install bashate
+      script:
+        - shellcheck setup.sh
+        - bashate setup.sh
