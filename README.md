@@ -1,4 +1,6 @@
 # What is happening skill for Snips 
+[![Build Status](https://api.travis-ci.com/koenvervloesem/snips-app-what-is-happening.svg?branch=master)](https://travis-ci.com/koenvervloesem/snips-app-what-is-happening)
+
 With this [Snips](https://snips.ai/) skill, you can ask your voice assistant about today's or any other day's events. This app knows about births and deaths of famous people, holidays, historical events, and so on. The app gets its information from the Linux program `calendar`, hence it's able to work offline.
 
 ## Installation
