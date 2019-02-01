@@ -8,7 +8,7 @@ matrix:
         - ./setup.sh
         - python3 test_action_what_is_happening.py
     - language: bash
-      install: pip3 install bashate
+      install: pip install bashate
       script:
         - shellcheck setup.sh
         - bashate setup.sh
