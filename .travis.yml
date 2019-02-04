@@ -9,14 +9,14 @@ matrix:
     python: 3.5
     script:
       - ./setup.sh
-      - pip3 install coverage codeclimate-test-reporter
+      - pip3 install 'coverage>4,0,<4.4' codeclimate-test-reporter
       - coverage run test_action_what_is_happening.py
       - codeclimate-test-reporter
   - language: python
     python: 3.6
     script:
       - ./setup.sh
-      - pip3 install coverage codeclimate-test-reporter
+      - pip3 install 'coverage>4,0,<4.4' codeclimate-test-reporter
       - coverage run test_action_what_is_happening.py
       - codeclimate-test-reporter
   - language: bash
