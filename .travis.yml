@@ -3,24 +3,19 @@ addons:
     repo_token:
       secure: "Jl9sI5AaNu/Us3b3lWjp5M7M7ZBhn7koid5TRUmfeITSfIsrmp/GbiIJohQJvuQxYcCbeoXSmfLkjK+2/1UmLM2sqLCpmMoxPNVHqEXDmOMtOtxGl4c2qAMBQXr9nkvKjbn4YCMRtupOwZvAd24h8a4B7PFYYDZ8MgMXah+4jkbrK+0E9oUgvjQMvehegp/wnZNJOoRHDGh1xbVmcQofWlCbongl08zKVD8NjwnhoGeGbJSGJXvN1BPDhhRxrMVAU6wwD7ant1aILw0lkido3C4hKB0NzQyMcRBgLZ0awT7ZqS1WaOcP1BE2Cu8uTrD2sAHxWFWYoAWn9J577yIGlNA95gkr+lb/1wzVF6c3YggHZxVi6Gq9uBPAVW6kATJ3oIWnoQs6ptHnNmxkWepZr+JNW4qo+JHS5uCvFsSpvmwZiU2mfUHJl2viKw9GG2mq0ucaAEr4rJ4gNoVtk0TzG6WlDDqnLQ1bSAo5Kx7mVqguU5FAN0Rj6Edvlwo33SgZuOhFluYhFwKNRx89jZdNN26DtMz7sRGBe0nq2WaH3HKTWrnUumA4WcQ6cuJhU+Gu62H3/TG/SrhAHuvu3d7JJb41x7mckVF7WTuoXCTekEWeKjKBFkrK8EvBzdQ0d0M/hmtB/4jQkNIkLCo8lszjYnZWeE1JhINjF1n4f/P+Qpg="
 
-matrix:
-  include:
-  - language: python
-    python: 3.5
-    script:
-      - ./setup.sh
-      - pip3 install 'coverage>4.0,<4.4' codeclimate-test-reporter
-      - coverage run test_action_what_is_happening.py
-      - codeclimate-test-reporter
-  - language: python
-    python: 3.6
-    script:
-      - ./setup.sh
-      - pip3 install 'coverage>4.0,<4.4' codeclimate-test-reporter
-      - coverage run test_action_what_is_happening.py
-      - codeclimate-test-reporter
-  - language: bash
-    install: sudo pip install bashate
-    script:
-      - shellcheck setup.sh
-      - bashate setup.sh
+language: python
+python:
+  - 3.5
+  - 3.6
+
+install:
+  - ./setup.sh
+  - pip3 install bashate 'coverage>4.0,<4.4' codeclimate-test-reporter
+
+script:
+  - shellcheck setup.sh
+  - bashate setup.sh
+  - coverage run test_action_what_is_happening.py
+
+after_script:
+  - codeclimate-test-reporter
