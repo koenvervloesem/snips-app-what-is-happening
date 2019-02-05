@@ -3,7 +3,8 @@ set -e
 
 # Copy config.ini.default if config.ini doesn't exist.
 if [ ! -e config.ini ]; then
-    cp -p config.ini.default config.ini
+    cp config.ini.default config.ini
+    chmod a+w config.ini
 fi
 
 PYTHON=$(command -v python3)
