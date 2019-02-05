@@ -5,6 +5,8 @@ This module contains a Snips skill to tell you what is happening
 this or another day.
 """
 
+import importlib
+import json
 import random
 from hermes_python.hermes import Hermes
 from snips_tools import SnipsConfigParser
@@ -13,17 +15,6 @@ import calendar_command as cal
 import toml
 
 CONFIG_INI = "config.ini"
-
-# Result sentences and their parts:
-DEFAULT = "default"
-EMPTY = "empty"
-AND = " and "
-RESULT_EVENT_NOTHING = "There's nothing in the {} calendar."
-RESULT_INVALID_CALENDAR = "{} is an invalid calendar. Please use another one."
-RESULT_DEFAULT_CALENDAR = "My default calendar is {}."
-RESULT_LIST = "This is the list of calendars you can choose: "
-RESULT_RESET = "I have reset your default calendar."
-RESULT_DEFAULT_CHANGED = "I have changed your default calendar to {}."
 
 
 class WhatIsHappening(object):
@@ -39,6 +30,12 @@ class WhatIsHappening(object):
             self.config = None
 
         self.calendar_command = cal.CalendarCommand(calendar_directory)
+
+        # Use the assistant's language.
+        with open("/usr/share/snips/assistant/assistant.json") as json_file:
+            language = json.load(json_file)["language"]
+
+        self.i18n = importlib.import_module("translations." + language)
 
         # start listening to MQTT
         self.start_blocking()
@@ -56,11 +53,11 @@ class WhatIsHappening(object):
                 result_sentence = random.choice(events)
             else:
                 if not calendar:
-                    calendar = DEFAULT
-                result_sentence = RESULT_EVENT_NOTHING.format(calendar)
+                    calendar = self.i18n.DEFAULT
+                result_sentence = self.i18n.RESULT_EVENT_NOTHING.format(calendar)
 
         else:
-            result_sentence = RESULT_INVALID_CALENDAR.format(calendar)
+            result_sentence = self.i18n.RESULT_INVALID_CALENDAR.format(calendar)
 
         hermes.publish_end_session(intent_message.session_id, result_sentence)
 
@@ -70,17 +67,17 @@ class WhatIsHappening(object):
         calendar = self.config["secret"]["default_calendar"]
 
         if not calendar:
-            calendar = EMPTY
+            calendar = self.i18n.EMPTY
 
         hermes.publish_end_session(intent_message.session_id,
-                                   RESULT_DEFAULT_CALENDAR.format(calendar))
+                                   self.i18n.RESULT_DEFAULT_CALENDAR.format(calendar))
 
     def list_of_calendars_callback(self, hermes, intent_message):
         """Callback for intent ListOfCalendars"""
         calendars = self.calendar_command.available_calendars()
 
         last = calendars.pop()
-        result_sentence = RESULT_LIST + ", ".join(calendars) + AND + last
+        result_sentence = self.i18n.RESULT_LIST + ", ".join(calendars) + self.i18n.AND + last
         hermes.publish_end_session(intent_message.session_id, result_sentence)
 
     def change_default_calendar_callback(self, hermes, intent_message):
@@ -91,10 +88,10 @@ class WhatIsHappening(object):
             self.config["secret"]["default_calendar"] = calendar
 
             SnipsConfigParser.write_configuration_file(CONFIG_INI, self.config)
-            result_sentence = RESULT_DEFAULT_CHANGED.format(calendar)
+            result_sentence = self.i18n.RESULT_DEFAULT_CHANGED.format(calendar)
 
         else:
-            result_sentence = RESULT_INVALID_CALENDAR.format(calendar)
+            result_sentence = self.i18n.RESULT_INVALID_CALENDAR.format(calendar)
 
         hermes.publish_end_session(intent_message.session_id, result_sentence)
 
@@ -104,7 +101,7 @@ class WhatIsHappening(object):
         self.config["secret"]["default_calendar"] = ""
 
         SnipsConfigParser.write_configuration_file(CONFIG_INI, self.config)
-        result_sentence = RESULT_RESET
+        result_sentence = self.i18n.RESULT_RESET
 
         hermes.publish_end_session(intent_message.session_id, result_sentence)
 
@@ -113,15 +110,15 @@ class WhatIsHappening(object):
         Master callback function, triggered everytime an intent is recognized.
         """
         coming_intent = intent_message.intent.intent_name
-        if coming_intent == 'koan:Event':
+        if coming_intent == self.i18n.INTENT_EVENT:
             self.event_callback(hermes, intent_message)
-        if coming_intent == 'koan:WhatIsDefaultCalendar':
+        if coming_intent == self.i18n.INTENT_WHAT_IS_DEFAULT_CALENDAR:
             self.what_is_default_calendar_callback(hermes, intent_message)
-        if coming_intent == 'koan:ChangeDefaultCalendar':
+        if coming_intent == self.i18n.INTENT_CHANGE_DEFAULT_CALENDAR:
             self.change_default_calendar_callback(hermes, intent_message)
-        if coming_intent == 'koan:ResetDefaultCalendar':
+        if coming_intent == self.i18n.INTENT_RESET_DEFAULT_CALENDAR:
             self.reset_default_calendar_callback(hermes, intent_message)
-        if coming_intent == 'koan:ListOfCalendars':
+        if coming_intent == self.i18n.INTENT_LIST_CALENDARS:
             self.list_of_calendars_callback(hermes, intent_message)
 
     def start_blocking(self):
