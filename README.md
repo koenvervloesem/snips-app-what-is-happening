@@ -1,5 +1,5 @@
 # What is happening skill for Snips 
-[![Build status](https://api.travis-ci.com/koenvervloesem/snips-app-what-is-happening.svg?branch=master)](https://travis-ci.com/koenvervloesem/snips-app-what-is-happening) [![Maintainability](https://api.codeclimate.com/v1/badges/f1feccc2fe9ca35daad7/maintainability)](https://codeclimate.com/github/koenvervloesem/snips-app-what-is-happening/maintainability) [![Test coverage](https://api.codeclimate.com/v1/badges/f1feccc2fe9ca35daad7/test_coverage)](https://codeclimate.com/github/koenvervloesem/snips-app-what-is-happening/test_coverage) [![Python versions](https://img.shields.io/badge/python-3.5-blue.svg)](https://www.python.org) [![GitHub license](https://img.shields.io/github/license/koenvervloesem/snips-app-what-is-happening.svg)](https://github.com/koenvervloesem/snips-app-what-is-happening/blob/master/LICENSE) [![Languages](https://img.shields.io/badge/i18n-en-brown.svg)](https://github.com/koenvervloesem/snips-app-what-is-happening/tree/master/translations) [![Snips App Store](https://img.shields.io/badge/snips-app-blue.svg)](https://console.snips.ai/store/en/skill_mN45remOonk)
+[![Build status](https://api.travis-ci.com/koenvervloesem/snips-app-what-is-happening.svg?branch=master)](https://travis-ci.com/koenvervloesem/snips-app-what-is-happening) [![Maintainability](https://api.codeclimate.com/v1/badges/f1feccc2fe9ca35daad7/maintainability)](https://codeclimate.com/github/koenvervloesem/snips-app-what-is-happening/maintainability) [![Test coverage](https://api.codeclimate.com/v1/badges/f1feccc2fe9ca35daad7/test_coverage)](https://codeclimate.com/github/koenvervloesem/snips-app-what-is-happening/test_coverage) [![Code quality](https://api.codacy.com/project/badge/Grade/41a7787006614fcf8c7c76376ae10c41)](https://app.codacy.com/app/koenvervloesem/snips-app-what-is-happening) [![Python versions](https://img.shields.io/badge/python-3.5-blue.svg)](https://www.python.org) [![GitHub license](https://img.shields.io/github/license/koenvervloesem/snips-app-what-is-happening.svg)](https://github.com/koenvervloesem/snips-app-what-is-happening/blob/master/LICENSE) [![Languages](https://img.shields.io/badge/i18n-en-brown.svg)](https://github.com/koenvervloesem/snips-app-what-is-happening/tree/master/translations) [![Snips App Store](https://img.shields.io/badge/snips-app-blue.svg)](https://console.snips.ai/store/en/skill_mN45remOonk)
 
 With this [Snips](https://snips.ai/) skill, you can ask your voice assistant about today's or any other day's events. This app knows about births and deaths of famous people, holidays, historical events, and so on. The app gets its information from the Linux program `calendar`, hence it's able to work offline.
 
@@ -13,7 +13,7 @@ If you want to change the default calendar, you can specify this in the user par
 
 If you want to use a combination of calendars by default, leave the `default_calendar` parameter in this app empty, and then execute this command:
 
-```
+``` shell
 sudo cp /usr/share/calendar/calendar.all /etc/calendar/
 ```
 
