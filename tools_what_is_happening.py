@@ -5,7 +5,7 @@ This module contains some utility functions used by the
 'What is happening' skill.
 """
 
-from hermes_python import ontology
+from hermes_python.ontology.dialogue import InstantTimeValue, TimeIntervalValue
 
 
 def get_calendar(intent_message, default_calendar):
@@ -45,10 +45,10 @@ def get_date(intent_message):
     # The user has specified a date in his voice command
     if intent_message.slots.calendar_date:
         date = intent_message.slots.calendar_date.first()
-        if isinstance(date, ontology.InstantTimeValue):
+        if isinstance(date, InstantTimeValue):
             # If the user specifies a date, return it in the format yyyymmdd.
             date = str(date.value[:10].replace("-", ""))
-        elif isinstance(date, ontology.TimeIntervalValue):
+        elif isinstance(date, TimeIntervalValue):
             # If the user specifies a time interval, return the start date
             # in the format yyyymmdd.
             date = str(date.from_date[:10].replace("-", ""))
