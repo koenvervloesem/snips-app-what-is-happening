@@ -3,7 +3,8 @@
 """This module tests the What is happening Snips skill."""
 
 from unittest import TestCase, main
-from hermes_python import ontology
+from hermes_python.ontology.dialogue import CustomValue, InstantTimeValue, \
+     IntentClassifierResult, IntentMessage, SlotMap, TimeIntervalValue
 import tools_what_is_happening as tools
 import calendar_command as cal
 
@@ -84,13 +85,13 @@ class TestTools(TestCase):
         Test whether the function get_calendar returns
         the default calendar if the intent doesn't have a calendar.
         """
-        slot_map = ontology.SlotMap({})
-        intent = ontology.IntentClassifierResult("koan:Event", 1.0)
-        intent_message = ontology.IntentMessage("session_id",
-                                                "custom_data",
-                                                "site_id",
-                                                "what is happening today",
-                                                intent, slot_map)
+        slot_map = SlotMap({})
+        intent = IntentClassifierResult("koan:Event", 1.0)
+        intent_message = IntentMessage("session_id",
+                                       "custom_data",
+                                       "site_id",
+                                       "what is happening today",
+                                       intent, slot_map)
 
         # No calendar in intent message, no default calendar
         # -> no calendar
@@ -104,16 +105,15 @@ class TestTools(TestCase):
         Test whether the function get_calendar returns
         the calendar in the intent, even if a default calendar is set.
         """
-        calendar_file_value = ontology.CustomValue("computer")
-        slot_map = ontology.SlotMap({"calendar_file":
-                                     ListWithFirst([calendar_file_value])})
-        intent = ontology.IntentClassifierResult("koan:Event", 1.0)
-        intent_message = ontology.IntentMessage("session_id",
-                                                "custom_data",
-                                                "site_id",
-                                                "what is happening today in"
-                                                " computers",
-                                                intent, slot_map)
+        calendar_file_value = CustomValue("computer")
+        slot_map = SlotMap({"calendar_file":
+                            ListWithFirst([calendar_file_value])})
+        intent = IntentClassifierResult("koan:Event", 1.0)
+        intent_message = IntentMessage("session_id",
+                                       "custom_data",
+                                       "site_id",
+                                       "what is happening today in computers",
+                                       intent, slot_map)
 
         # Calendar computer in intent message, no default calendar
         # -> calendar computer
@@ -128,18 +128,18 @@ class TestTools(TestCase):
         Test whether the function get_date returns
         the data in the intent if it contains an instant time value.
         """
-        calendar_date_value = ontology.InstantTimeValue("2018-10-31 00:00:00"
-                                                        " +01:00",
-                                                        "grain",
-                                                        "precision")
-        slot_map = ontology.SlotMap({"calendar_date":
-                                     ListWithFirst([calendar_date_value])})
-        intent = ontology.IntentClassifierResult("koan:Event", 1.0)
-        intent_message = ontology.IntentMessage("session_id",
-                                                "custom_data",
-                                                "site_id",
-                                                "what is happening today",
-                                                intent, slot_map)
+        calendar_date_value = InstantTimeValue("2018-10-31 00:00:00"
+                                               " +01:00",
+                                               "grain",
+                                               "precision")
+        slot_map = SlotMap({"calendar_date":
+                            ListWithFirst([calendar_date_value])})
+        intent = IntentClassifierResult("koan:Event", 1.0)
+        intent_message = IntentMessage("session_id",
+                                       "custom_data",
+                                       "site_id",
+                                       "what is happening today",
+                                       intent, slot_map)
 
         self.assertEqual(tools.get_date(intent_message), "20181031")
 
@@ -148,18 +148,18 @@ class TestTools(TestCase):
         Test whether the function get_date returns
         the start date in the intent if it contains a time interval.
         """
-        calendar_date_value = ontology.TimeIntervalValue("2018-11-05 18:00:00"
-                                                         " +01:00",
-                                                         "2018-11-06 00:00:00"
-                                                         " +01:00")
-        slot_map = ontology.SlotMap({"calendar_date":
-                                     ListWithFirst([calendar_date_value])})
-        intent = ontology.IntentClassifierResult("koan:Event", 1.0)
-        intent_message = ontology.IntentMessage("session_id",
-                                                "custom_data",
-                                                "site_id",
-                                                "what is happening this night",
-                                                intent, slot_map)
+        calendar_date_value = TimeIntervalValue("2018-11-05 18:00:00"
+                                                " +01:00",
+                                                "2018-11-06 00:00:00"
+                                                " +01:00")
+        slot_map = SlotMap({"calendar_date":
+                            ListWithFirst([calendar_date_value])})
+        intent = IntentClassifierResult("koan:Event", 1.0)
+        intent_message = IntentMessage("session_id",
+                                       "custom_data",
+                                       "site_id",
+                                       "what is happening this night",
+                                       intent, slot_map)
 
         self.assertEqual(tools.get_date(intent_message), "20181105")
 
@@ -168,13 +168,13 @@ class TestTools(TestCase):
         Test whether the function get_date returns an empty string
         if an intent doesn't contain a date.
         """
-        slot_map = ontology.SlotMap({})
-        intent = ontology.IntentClassifierResult("koan:Event", 1.0)
-        intent_message = ontology.IntentMessage("session_id",
-                                                "custom_data",
-                                                "site_id",
-                                                "what is happening",
-                                                intent, slot_map)
+        slot_map = SlotMap({})
+        intent = IntentClassifierResult("koan:Event", 1.0)
+        intent_message = IntentMessage("session_id",
+                                       "custom_data",
+                                       "site_id",
+                                       "what is happening",
+                                       intent, slot_map)
 
         self.assertEqual(tools.get_date(intent_message), "")
 
