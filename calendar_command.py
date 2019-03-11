@@ -74,6 +74,11 @@ class CalendarCommand(object):
 
         # Substitute multiple whitespaces by one space.
         events = [' '.join(event.split()) for event in lines_copy[:index]]
+
+        # Replace '&' by 'and' because PicoTTS pronounces it as 'ampersand'.
+        # See https://github.com/snipsco/snips-issues/issues/85
+        events = [event.replace('&', 'and') for event in events]
+
         # Create a sentence with the date and a new sentence with the description.
         # Strip the asterisk (*) after a date. This means the date changes from year to year.
         return [event[:6] + '.' + event[6:].strip("*") for event in events]
