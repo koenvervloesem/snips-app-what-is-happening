@@ -77,7 +77,10 @@ class WhatIsHappening(object):
         calendars = self.calendar_command.available_calendars()
 
         last = calendars.pop()
-        result_sentence = self.i18n.RESULT_LIST + ", ".join(calendars) + self.i18n.AND + last
+        result_sentence = "{}{} {} {}".format(self.i18n.RESULT_LIST,
+                                              ", ".join(calendars),
+                                              self.i18n.AND,
+                                              last)
         hermes.publish_end_session(intent_message.session_id, result_sentence)
 
     def change_default_calendar_callback(self, hermes, intent_message):

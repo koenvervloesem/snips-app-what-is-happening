@@ -8,7 +8,7 @@ of the What is happening skill.
 # Result sentences and their parts:
 DEFAULT = "default"
 EMPTY = "empty"
-AND = " and "
+AND = "and"
 RESULT_EVENT_NOTHING = "There's nothing in the {} calendar."
 RESULT_INVALID_CALENDAR = "{} is an invalid calendar. Please use another one."
 RESULT_DEFAULT_CALENDAR = "My default calendar is {}."
