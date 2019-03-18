@@ -19,7 +19,7 @@ def get_calendar(intent_message, default_calendar):
     """
 
     # The user has specified a calendar file in his voice command
-    if intent_message.slots.calendar_file:
+    if intent_message.slots and intent_message.slots.calendar_file:
         calendar = str(intent_message.slots.calendar_file.first().value)
     else:
         # The user has specified a default calendar file in the
@@ -43,7 +43,7 @@ def get_date(intent_message):
     """
 
     # The user has specified a date in his voice command
-    if intent_message.slots.calendar_date:
+    if intent_message.slots and intent_message.slots.calendar_date:
         date = intent_message.slots.calendar_date.first()
         if isinstance(date, InstantTimeValue):
             # If the user specifies a date, return it in the format yyyymmdd.
