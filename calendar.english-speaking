@@ -1,0 +1,34 @@
+/*
+ * Calendar files in English
+ *
+ * This includes all English-language calendar files and none of the
+ * calendar files in other languages.
+ *
+ * To use this file by default in the calendar command (and in this
+ * Snips app), copy it into /etc/calendar/calendar.all.
+ *
+ * If you have installed the app, this can be done by:
+ *
+ * sudo cp /var/lib/snips/skills/snips-app-what-is-happening/calendar.english-speaking /etc/calendar/calendar.all
+ *
+ */
+
+#ifndef _calendar_all_
+#define _calendar_all_
+
+#include <calendar.birthday>
+#include <calendar.christian>
+#include <calendar.computer>
+#include <calendar.debian>
+#include <calendar.discordian>
+#include <calendar.eu>
+#include <calendar.history>
+#include <calendar.holiday>
+#include <calendar.lotr>
+#include <calendar.music>
+#include <calendar.pagan>
+#include <calendar.ubuntu>
+#include <calendar.unitedkingdom>
+#include <calendar.usholiday>
+
+#endif /* !_calendar_all_ */
