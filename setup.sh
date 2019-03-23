@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-# Copy config.ini.default if config.ini doesn't exist.
-if [ ! -e config.ini ]; then
+# Copy config.ini.default if it exists and config.ini doesn't exist.
+if [ -e config.ini.default ] && [ ! -e config.ini ]; then
     cp config.ini.default config.ini
     chmod a+w config.ini
 fi
