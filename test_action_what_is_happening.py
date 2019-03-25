@@ -4,16 +4,10 @@
 
 from unittest import TestCase, main
 from hermes_python.ontology.dialogue import CustomValue, InstantTimeValue, \
-     IntentClassifierResult, IntentMessage, SlotMap, TimeIntervalValue
+     IntentClassifierResult, IntentMessage, SlotMap, TimeIntervalValue, \
+     SlotsList
 import tools_what_is_happening as tools
 import calendar_command as cal
-
-
-class ListWithFirst(list):
-    """"Helper class to add the first() method to a list."""
-    def first(self):
-        """Return the first element of the ListWithFirst object."""
-        return self[0]
 
 
 class TestCalendarCommand(TestCase):
@@ -107,7 +101,7 @@ class TestTools(TestCase):
         """
         calendar_file_value = CustomValue("computer")
         slot_map = SlotMap({"calendar_file":
-                            ListWithFirst([calendar_file_value])})
+                            SlotsList([calendar_file_value])})
         intent = IntentClassifierResult("koan:Event", 1.0)
         intent_message = IntentMessage("session_id",
                                        "custom_data",
@@ -133,7 +127,7 @@ class TestTools(TestCase):
                                                "grain",
                                                "precision")
         slot_map = SlotMap({"calendar_date":
-                            ListWithFirst([calendar_date_value])})
+                            SlotsList([calendar_date_value])})
         intent = IntentClassifierResult("koan:Event", 1.0)
         intent_message = IntentMessage("session_id",
                                        "custom_data",
@@ -153,7 +147,7 @@ class TestTools(TestCase):
                                                 "2018-11-06 00:00:00"
                                                 " +01:00")
         slot_map = SlotMap({"calendar_date":
-                            ListWithFirst([calendar_date_value])})
+                            SlotsList([calendar_date_value])})
         intent = IntentClassifierResult("koan:Event", 1.0)
         intent_message = IntentMessage("session_id",
                                        "custom_data",
