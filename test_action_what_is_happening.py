@@ -101,7 +101,7 @@ class TestTools(TestCase):
         """
         calendar_file_value = CustomValue("computer")
         slot_map = SlotMap({"calendar_file":
-                            SlotsList([calendar_file_value])})
+                            SlotsList([NluSlot(calendar_file_value)])})
         intent = IntentClassifierResult("koan:Event", 1.0)
         intent_message = IntentMessage("session_id",
                                        "custom_data",
@@ -127,7 +127,7 @@ class TestTools(TestCase):
                                                "grain",
                                                "precision")
         slot_map = SlotMap({"calendar_date":
-                            SlotsList([calendar_date_value])})
+                            SlotsList([NluSlot(calendar_date_value)])})
         intent = IntentClassifierResult("koan:Event", 1.0)
         intent_message = IntentMessage("session_id",
                                        "custom_data",
@@ -147,7 +147,7 @@ class TestTools(TestCase):
                                                 "2018-11-06 00:00:00"
                                                 " +01:00")
         slot_map = SlotMap({"calendar_date":
-                            SlotsList([calendar_date_value])})
+                            SlotsList([NluSlot(calendar_date_value)])})
         intent = IntentClassifierResult("koan:Event", 1.0)
         intent_message = IntentMessage("session_id",
                                        "custom_data",
