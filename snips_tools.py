@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This module contains a utility class to work with the configuration file
-for the Snips skill.
+for the Snips app.
 """
 
 import configparser

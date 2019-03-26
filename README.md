@@ -1,10 +1,10 @@
-# What is happening skill for Snips 
+# What is happening app for Snips 
 [![Build status](https://api.travis-ci.com/koenvervloesem/snips-app-what-is-happening.svg?branch=master)](https://travis-ci.com/koenvervloesem/snips-app-what-is-happening) [![Maintainability](https://api.codeclimate.com/v1/badges/f1feccc2fe9ca35daad7/maintainability)](https://codeclimate.com/github/koenvervloesem/snips-app-what-is-happening/maintainability) [![Test coverage](https://api.codeclimate.com/v1/badges/f1feccc2fe9ca35daad7/test_coverage)](https://codeclimate.com/github/koenvervloesem/snips-app-what-is-happening/test_coverage) [![Code quality](https://api.codacy.com/project/badge/Grade/41a7787006614fcf8c7c76376ae10c41)](https://app.codacy.com/app/koenvervloesem/snips-app-what-is-happening) [![Python versions](https://img.shields.io/badge/python-3.5-blue.svg)](https://www.python.org) [![GitHub license](https://img.shields.io/github/license/koenvervloesem/snips-app-what-is-happening.svg)](https://github.com/koenvervloesem/snips-app-what-is-happening/blob/master/LICENSE) [![Languages](https://img.shields.io/badge/i18n-en-brown.svg)](https://github.com/koenvervloesem/snips-app-what-is-happening/tree/master/translations) [![Snips App Store](https://img.shields.io/badge/snips-app-blue.svg)](https://console.snips.ai/store/en/skill_mN45remOonk)
 
-With this [Snips](https://snips.ai/) skill, you can ask your voice assistant about today's or any other day's events. This app knows about births and deaths of famous people, holidays, historical events, and so on. The app gets its information from the Linux program `calendar`, hence it's able to work offline.
+With this [Snips](https://snips.ai/) app, you can ask your voice assistant about today's or any other day's events. This app knows about births and deaths of famous people, holidays, historical events, and so on. The app gets its information from the Linux program `calendar`, hence it's able to work offline.
 
 ## Installation
-The easiest way to install this skill is by adding the Snips app [What is happening on this day](https://console.snips.ai/store/en/skill_mN45remOonk) to your assistant in the [Snips Console](https://console.snips.ai).
+The easiest way to install this app is by adding the Snips app [What is happening on this day](https://console.snips.ai/store/en/skill_mN45remOonk) to your assistant in the [Snips Console](https://console.snips.ai).
 
 The `calendar` program is installed by default on Raspbian and many other Linux distributions. If not, you can find it in the package `bsdmainutils`. Install it with `sudo apt install bsdmainutils` on a Debian- or Ubuntu-based system.
 
@@ -37,4 +37,4 @@ This app recognizes the following intents:
 *   koan:ListOfCalendars - The user asks for the list of available calendars. The app responds with the list of calendars it recognizes.
 
 ## Copyright
-This skill is provided by [Koen Vervloesem](mailto:koen@vervloesem.eu) as open source software. See LICENSE for more information.
+This app is provided by [Koen Vervloesem](mailto:koen@vervloesem.eu) as open source software. See LICENSE for more information.

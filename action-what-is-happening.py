@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-This module contains a Snips skill to tell you what is happening
+This module contains a Snips app to tell you what is happening
 this or another day.
 """
 
@@ -18,10 +18,10 @@ CONFIG_INI = "config.ini"
 
 
 class WhatIsHappening(object):
-    """This skill tells you what is happening this or another day."""
+    """This Snips app tells you what is happening this or another day."""
 
     def __init__(self):
-        """Initialize the skill."""
+        """Initialize the app."""
         # Try to read the configuration.
         try:
             self.config = SnipsConfigParser.read_configuration_file(CONFIG_INI)

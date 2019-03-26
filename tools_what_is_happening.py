@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This module contains some utility functions used by the
-'What is happening' skill.
+'What is happening' app.
 """
 
 from hermes_python.ontology.dialogue import InstantTimeValue, TimeIntervalValue

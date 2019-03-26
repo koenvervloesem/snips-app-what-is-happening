@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""This module tests the What is happening Snips skill."""
+"""This module tests the What is happening Snips app."""
 
 from unittest import TestCase, main, skip
 from hermes_python.ontology.dialogue import CustomValue, InstantTimeValue, \
@@ -72,7 +72,7 @@ class TestCalendarCommand(TestCase):
 
 @skip("Doesn't work anymore, I should rewrite this test")
 class TestTools(TestCase):
-    """Test the helper functions of the What is happening skill."""
+    """Test the helper functions of the What is happening app."""
 
     def test_get_calendar_from_intent_without_calendar(self):
         """
