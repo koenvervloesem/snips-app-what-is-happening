@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-This module contains the result sentences and intents for the Spanish (Spain) version
+This module contains a provisional translation for a Spanish (Spain) version
 of the What is happening skill.
+This is a workaround, Spanish sources may be smaller than English originals 'til translations catch up.
+Please remember to change the default user to the one in your Snips console (Ctrl + F "yourusername").
 """
 
 # Result sentences and their parts:
@@ -17,8 +19,8 @@ RESULT_RESET = "He reseteado tu calendario por defecto."
 RESULT_DEFAULT_CHANGED = "He cambiado tu calendario por defecto a {}."
 
 # Intents
-INTENT_EVENT = 'koan:Event'
-INTENT_WHAT_IS_DEFAULT_CALENDAR = 'koan:WhatIsDefaultCalendar'
-INTENT_CHANGE_DEFAULT_CALENDAR = 'koan:ChangeDefaultCalendar'
-INTENT_RESET_DEFAULT_CALENDAR = 'koan:ResetDefaultCalendar'
-INTENT_LIST_CALENDARS = 'koan:ListOfCalendars'
+INTENT_EVENT = 'yourusername:Event'
+INTENT_WHAT_IS_DEFAULT_CALENDAR = 'yourusername:WhatIsDefaultCalendar'
+INTENT_CHANGE_DEFAULT_CALENDAR = 'yourusername:ChangeDefaultCalendar'
+INTENT_RESET_DEFAULT_CALENDAR = 'yourusername:ResetDefaultCalendar'
+INTENT_LIST_CALENDARS = 'yourusername:ListOfCalendars'
