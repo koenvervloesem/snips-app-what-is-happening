@@ -1,0 +1,102 @@
+{
+  "name" : "calendar",
+  "useSynonyms" : true,
+  "data" : [ {
+    "value" : "argentina",
+    "synonyms" : [ "argentinian" ]
+  }, {
+    "value" : "australia",
+    "synonyms" : [ "australian" ]
+  }, {
+    "value" : "belgium",
+    "synonyms" : [ "belgian" ]
+  }, {
+    "value" : "birthday",
+    "synonyms" : [ "birthdays" ]
+  }, {
+    "value" : "christian",
+    "synonyms" : [ "christianity" ]
+  }, {
+    "value" : "computer",
+    "synonyms" : [ "computing", "computers" ]
+  }, {
+    "value" : "croatian",
+    "synonyms" : [ "croatia" ]
+  }, {
+    "value" : "debian",
+    "synonyms" : [ "debian gnu/linux", "debian linux" ]
+  }, {
+    "value" : "discordian",
+    "synonyms" : [ "discordianism" ]
+  }, {
+    "value" : "dutch",
+    "synonyms" : [ "netherlands" ]
+  }, {
+    "value" : "eu",
+    "synonyms" : [ "european union", "E U" ]
+  }, {
+    "value" : "freebsd",
+    "synonyms" : [ "free B S D" ]
+  }, {
+    "value" : "french",
+    "synonyms" : [ "france" ]
+  }, {
+    "value" : "german",
+    "synonyms" : [ "germany" ]
+  }, {
+    "value" : "history",
+    "synonyms" : [ "historical" ]
+  }, {
+    "value" : "holiday",
+    "synonyms" : [ "holidays" ]
+  }, {
+    "value" : "hungarian",
+    "synonyms" : [ "hungary" ]
+  }, {
+    "value" : "judaic",
+    "synonyms" : [ "jewish" ]
+  }, {
+    "value" : "kazakhstan",
+    "synonyms" : [ "kazakh" ]
+  }, {
+    "value" : "lotr",
+    "synonyms" : [ "lord of the rings" ]
+  }, {
+    "value" : "music",
+    "synonyms" : [ "musical" ]
+  }, {
+    "value" : "newzealand",
+    "synonyms" : [ "new zealand" ]
+  }, {
+    "value" : "pagan",
+    "synonyms" : [ ]
+  }, {
+    "value" : "russian",
+    "synonyms" : [ "russia" ]
+  }, {
+    "value" : "southafrica",
+    "synonyms" : [ "south african", "south africa" ]
+  }, {
+    "value" : "thai",
+    "synonyms" : [ "thailand" ]
+  }, {
+    "value" : "ubuntu",
+    "synonyms" : [ ]
+  }, {
+    "value" : "ukrainian",
+    "synonyms" : [ "ukraine" ]
+  }, {
+    "value" : "unitedkingdom",
+    "synonyms" : [ "united kingdom", "U K", "british", "english" ]
+  }, {
+    "value" : "usholiday",
+    "synonyms" : [ "american", "american holidays", "U S holiday", "U S holidays", "U S" ]
+  }, {
+    "value" : "world",
+    "synonyms" : [ "global" ]
+  } ],
+  "automaticallyExtensible" : true,
+  "id" : "entity_O0AdvDEelrz",
+  "language" : "en",
+  "entityType" : "custom"
+}

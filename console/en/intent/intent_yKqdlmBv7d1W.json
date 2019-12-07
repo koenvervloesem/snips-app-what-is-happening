@@ -1,0 +1,399 @@
+{
+  "customIntentData" : {
+    "language" : "en",
+    "utterances" : [ {
+      "data" : [ {
+        "text" : "return to the system calendar, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 40
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "go back to the system calendar, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 41
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "restore the default calendar, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 39
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "go back to the default calendar, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 42
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "return to the default calendar, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 41
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "reset the default calendar, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "make the default calendar empty, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 42
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "clear the default calendar, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "return to the system calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 29
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please return to the system calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 36
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "go back to the system calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 30
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please go back to the system calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "return to the system calendar, please",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "go back to the system calendar, please",
+        "range" : {
+          "start" : 0,
+          "end" : 38
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you go back to the system calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 39
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you return to the system calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 38
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to return to the system calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 43
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to go back to the system calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 44
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to restore the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 42
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to go back to the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 45
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to return to the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 44
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to reset the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 40
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to clear the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 40
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to make the default calendar empty",
+        "range" : {
+          "start" : 0,
+          "end" : 45
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you make the default calendar empty?",
+        "range" : {
+          "start" : 0,
+          "end" : 40
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you clear the default calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 35
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you reset the default calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 35
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you return to the default calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 39
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you go back to the default calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 40
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you restore the default calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "restore the default calendar, please",
+        "range" : {
+          "start" : 0,
+          "end" : 36
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "go back to the default calendar, please",
+        "range" : {
+          "start" : 0,
+          "end" : 39
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "return to the default calendar, please",
+        "range" : {
+          "start" : 0,
+          "end" : 38
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "reset the default calendar, please",
+        "range" : {
+          "start" : 0,
+          "end" : 34
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "clear the default calendar, please",
+        "range" : {
+          "start" : 0,
+          "end" : 34
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "make the default calendar empty, please",
+        "range" : {
+          "start" : 0,
+          "end" : 39
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "restore the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 28
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please restore the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 35
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please go back to the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 38
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "go back to the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 31
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please return to the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "return to the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 30
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please reset the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 33
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please make the default calendar empty",
+        "range" : {
+          "start" : 0,
+          "end" : 38
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please clear the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 33
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "reset the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 26
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "make the default calendar empty",
+        "range" : {
+          "start" : 0,
+          "end" : 31
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "clear the default calendar",
+        "range" : {
+          "start" : 0,
+          "end" : 26
+        }
+      } ]
+    } ]
+  },
+  "id" : "intent_yKqdlmBv7d1W",
+  "config" : {
+    "displayName" : "ResetDefaultCalendar",
+    "name" : "ResetDefaultCalendar",
+    "description" : "The user asks to reset the default calendar.",
+    "language" : "en",
+    "slots" : [ ],
+    "exampleQueries" : [ "return to the system calendar, will you?", "go back to the system calendar, will you?", "restore the default calendar, will you?", "go back to the default calendar, will you?", "return to the default calendar, will you?", "reset the default calendar, will you?", "make the default calendar empty, will you?", "clear the default calendar, will you?", "return to the system calendar", "please return to the system calendar" ]
+  }
+}

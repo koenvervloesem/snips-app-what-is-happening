@@ -1,0 +1,303 @@
+{
+  "customIntentData" : {
+    "language" : "en",
+    "utterances" : [ {
+      "data" : [ {
+        "text" : "tell me what the default calendar is, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 47
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what calendar you are using, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 46
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what default calendar you are using, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 54
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what your default calendar is, will you?",
+        "range" : {
+          "start" : 0,
+          "end" : 48
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to tell me what the default calendar is",
+        "range" : {
+          "start" : 0,
+          "end" : 50
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to tell me what calendar you are using",
+        "range" : {
+          "start" : 0,
+          "end" : 49
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to tell me what default calendar you are using",
+        "range" : {
+          "start" : 0,
+          "end" : 57
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to tell me what your default calendar is",
+        "range" : {
+          "start" : 0,
+          "end" : 51
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what your default calendar is, please",
+        "range" : {
+          "start" : 0,
+          "end" : 45
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what default calendar you are using, please",
+        "range" : {
+          "start" : 0,
+          "end" : 51
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what calendar you are using, please",
+        "range" : {
+          "start" : 0,
+          "end" : 43
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what the default calendar is, please",
+        "range" : {
+          "start" : 0,
+          "end" : 44
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what the default calendar is",
+        "range" : {
+          "start" : 0,
+          "end" : 36
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what calendar you are using",
+        "range" : {
+          "start" : 0,
+          "end" : 35
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what default calendar you are using",
+        "range" : {
+          "start" : 0,
+          "end" : 43
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me what your default calendar is",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you tell me what your default calendar is?",
+        "range" : {
+          "start" : 0,
+          "end" : 46
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you tell me what default calendar you are using?",
+        "range" : {
+          "start" : 0,
+          "end" : 52
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you tell me what calendar you are using?",
+        "range" : {
+          "start" : 0,
+          "end" : 44
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you tell me what the default calendar is?",
+        "range" : {
+          "start" : 0,
+          "end" : 45
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please tell me what default calendar you are using",
+        "range" : {
+          "start" : 0,
+          "end" : 50
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please tell me what calendar you are using",
+        "range" : {
+          "start" : 0,
+          "end" : 42
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please tell me what the default calendar is",
+        "range" : {
+          "start" : 0,
+          "end" : 43
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please tell me what your default calendar is",
+        "range" : {
+          "start" : 0,
+          "end" : 44
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what default calendar are you using, please?",
+        "range" : {
+          "start" : 0,
+          "end" : 44
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what is the default calendar, please?",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what calendar are you using, please?",
+        "range" : {
+          "start" : 0,
+          "end" : 36
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what is your default calendar, please?",
+        "range" : {
+          "start" : 0,
+          "end" : 38
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what's your default calendar, please?",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what's the default calendar, please?",
+        "range" : {
+          "start" : 0,
+          "end" : 36
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what's the default calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 28
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what's your default calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 29
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what is your default calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 30
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what calendar are you using?",
+        "range" : {
+          "start" : 0,
+          "end" : 28
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what is the default calendar?",
+        "range" : {
+          "start" : 0,
+          "end" : 29
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what default calendar are you using?",
+        "range" : {
+          "start" : 0,
+          "end" : 36
+        }
+      } ]
+    } ]
+  },
+  "id" : "intent_BK7WMvwoloW",
+  "config" : {
+    "displayName" : "WhatIsDefaultCalendar",
+    "name" : "WhatIsDefaultCalendar",
+    "description" : "The user asks what the default calendar is.",
+    "language" : "en",
+    "slots" : [ ],
+    "exampleQueries" : [ "tell me what the default calendar is, will you?", "tell me what calendar you are using, will you?", "tell me what default calendar you are using, will you?", "tell me what your default calendar is, will you?", "i want you to tell me what the default calendar is", "i want you to tell me what calendar you are using", "i want you to tell me what default calendar you are using", "i want you to tell me what your default calendar is", "tell me what your default calendar is, please", "tell me what default calendar you are using, please" ]
+  }
+}

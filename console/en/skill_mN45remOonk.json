@@ -1,0 +1,31 @@
+{
+  "name" : "What is happening on this day",
+  "repository" : "https://github.com/koenvervloesem/snips-app-what-is-happening",
+  "changelog" : "- Improvements: better recognition of UK, US, EU, FreeBSD calendar names; included example of an English-only calendar file",
+  "description" : "You can ask about today's or any other day's events. This app knows about births and deaths of famous people, holidays, historical events, and so on.\n\nThe app gets its information from the `calendar` program, hence it's able to work offline. The `calendar` program is installed by default on Raspbian and many other Linux distributions. If not, you can find it in the package `bsdmainutils`. Install it with `sudo apt install bsdmainutils` on a Debian- or Ubuntu-based system.\n\nIf you want to change the default calendar, you can specify this in the user parameter `default_calendar`, in Snips Console, by editing the config.ini file manually or by a voice command.\n\nIf you want to use a combination of calendars by default, leave the `default_calendar` parameter in this app empty. And then execute this command:\n\nsudo cp /usr/share/calendar/calendar.all /etc/calendar/\n\nAnd edit the file /etc/calendar/calendar.all to your taste.\n\nI have included an example calendar file with only English-language calendars. To use this file by default, copy it into /etc/calendar/calendar.all:\n\nsudo cp /var/lib/snips/skills/snips-app-what-is-happening/calendar.english-speaking /etc/calendar/calendar.all\n\nThe location of the calendar files is specified in the parameter `calendar_location`, with the default value `/usr/share/calendar`.\n\nMore information can be found on the GitHub page of the actions code: https://github.com/koenvervloesem/snips-app-what-is-happening\n\nIf you have some suggestions for improvements, such as new training examples or new functionality, or if you found a bug, feel free to contact me at koen@vervloesem.eu and I'll be happy to add or correct it. And if you like my app, please rate it :-)\n\nUpdate January 27th 2019: If you had the app before and you want to update it, please remove the config.ini first with:\n\nrm /var/lib/snips/skills/snips-app-what-is-happening/config.ini",
+  "skillType" : "GITHUB",
+  "intents" : [ {
+    "id" : "intent_BK7WMvwoloW"
+  }, {
+    "id" : "intent_KMwkyXB78z9r"
+  }, {
+    "id" : "intent_O7Zad0G2zb"
+  }, {
+    "id" : "intent_qWk5eerlkpX1"
+  }, {
+    "id" : "intent_yKqdlmBv7d1W"
+  } ],
+  "id" : "skill_mN45remOonk",
+  "language" : "en",
+  "imageUrl" : "https://console.snips.ai/images/bundles/bundle-calendar.svg",
+  "actionTemplateName" : "python2",
+  "parameters" : [ {
+    "name" : "default_calendar",
+    "sensitiveValue" : true,
+    "defaultValue" : ""
+  }, {
+    "name" : "calendar_location",
+    "sensitiveValue" : true,
+    "defaultValue" : "/usr/share/calendar"
+  } ]
+}

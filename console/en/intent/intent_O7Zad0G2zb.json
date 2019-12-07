@@ -1,0 +1,351 @@
+{
+  "customIntentData" : {
+    "language" : "en",
+    "utterances" : [ {
+      "data" : [ {
+        "text" : "please give me the list of calendars i can use",
+        "range" : {
+          "start" : 0,
+          "end" : 46
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "give me the list of calendars i can use, please",
+        "range" : {
+          "start" : 0,
+          "end" : 47
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "give me the list of calendars i can use",
+        "range" : {
+          "start" : 0,
+          "end" : 39
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please give me the list of calendars i can choose",
+        "range" : {
+          "start" : 0,
+          "end" : 49
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "give me the list of calendars i can choose, please",
+        "range" : {
+          "start" : 0,
+          "end" : 50
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "give me the list of calendars i can choose",
+        "range" : {
+          "start" : 0,
+          "end" : 42
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please give me the list of available calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 46
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "give me the list of available calendars, please",
+        "range" : {
+          "start" : 0,
+          "end" : 47
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "give me the list of available calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 39
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "give me the list of calendars, please",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please give me the list of calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 36
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "give me the list of calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 29
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "which calendars can i use?",
+        "range" : {
+          "start" : 0,
+          "end" : 26
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me which calendars i can use",
+        "range" : {
+          "start" : 0,
+          "end" : 33
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me which calendars i can use, please",
+        "range" : {
+          "start" : 0,
+          "end" : 41
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please tell me which calendars i can use",
+        "range" : {
+          "start" : 0,
+          "end" : 40
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you tell me which calendars i can use?",
+        "range" : {
+          "start" : 0,
+          "end" : 42
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to tell me which calendars i can choose",
+        "range" : {
+          "start" : 0,
+          "end" : 50
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to tell me which calendars i can use",
+        "range" : {
+          "start" : 0,
+          "end" : 47
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to tell me which calendars are available",
+        "range" : {
+          "start" : 0,
+          "end" : 51
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to tell me the list of calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 43
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i want you to tell me the list of available calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 53
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you tell me the list of available calendars?",
+        "range" : {
+          "start" : 0,
+          "end" : 48
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you tell me the list of calendars?",
+        "range" : {
+          "start" : 0,
+          "end" : 38
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you tell me which calendars are available?",
+        "range" : {
+          "start" : 0,
+          "end" : 46
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "can you tell me which calendars i can choose?",
+        "range" : {
+          "start" : 0,
+          "end" : 45
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please tell me which calendars i can choose",
+        "range" : {
+          "start" : 0,
+          "end" : 43
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please tell me which calendars are available",
+        "range" : {
+          "start" : 0,
+          "end" : 44
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please tell me the list of calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 36
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please tell me the list of available calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 46
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me the list of available calendars, please",
+        "range" : {
+          "start" : 0,
+          "end" : 47
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me the list of calendars, please",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me which calendars are available, please",
+        "range" : {
+          "start" : 0,
+          "end" : 45
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me which calendars i can choose, please",
+        "range" : {
+          "start" : 0,
+          "end" : 44
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me which calendars i can choose",
+        "range" : {
+          "start" : 0,
+          "end" : 36
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me which calendars are available",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me the list of calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 29
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "tell me the list of available calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 39
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "which calendars can i choose",
+        "range" : {
+          "start" : 0,
+          "end" : 28
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what's the list of calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 28
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "what's the list of available calendars",
+        "range" : {
+          "start" : 0,
+          "end" : 38
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "which calendars are available",
+        "range" : {
+          "start" : 0,
+          "end" : 29
+        }
+      } ]
+    } ]
+  },
+  "id" : "intent_O7Zad0G2zb",
+  "config" : {
+    "displayName" : "ListOfCalendars",
+    "name" : "ListOfCalendars",
+    "description" : "The user asks for the list of available calendars.",
+    "language" : "en",
+    "slots" : [ ],
+    "exampleQueries" : [ "please give me the list of calendars i can use", "give me the list of calendars i can use, please", "give me the list of calendars i can use", "please give me the list of calendars i can choose", "give me the list of calendars i can choose, please", "give me the list of calendars i can choose", "please give me the list of available calendars", "give me the list of available calendars, please", "give me the list of available calendars", "give me the list of calendars, please" ]
+  }
+}

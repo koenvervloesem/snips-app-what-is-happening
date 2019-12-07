@@ -1,0 +1,488 @@
+{
+  "customIntentData" : {
+    "language" : "en",
+    "utterances" : [ {
+      "data" : [ {
+        "text" : "turn my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 20
+        }
+      }, {
+        "text" : "thai",
+        "range" : {
+          "start" : 20,
+          "end" : 24
+        },
+        "slot_id" : "3BnGYp04F"
+      }, {
+        "text" : ", please",
+        "range" : {
+          "start" : 24,
+          "end" : 32
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "switch my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 22
+        }
+      }, {
+        "text" : "lord of the rings",
+        "range" : {
+          "start" : 22,
+          "end" : 39
+        },
+        "slot_id" : "3BnGYp04F"
+      }, {
+        "text" : ", please",
+        "range" : {
+          "start" : 39,
+          "end" : 47
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "modify my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 22
+        }
+      }, {
+        "text" : "german",
+        "range" : {
+          "start" : 22,
+          "end" : 28
+        },
+        "slot_id" : "3BnGYp04F"
+      }, {
+        "text" : ", please",
+        "range" : {
+          "start" : 28,
+          "end" : 36
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "adjust my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 22
+        }
+      }, {
+        "text" : "holidays",
+        "range" : {
+          "start" : 22,
+          "end" : 30
+        },
+        "slot_id" : "3BnGYp04F"
+      }, {
+        "text" : ", please",
+        "range" : {
+          "start" : 30,
+          "end" : 38
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "change my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 22
+        }
+      }, {
+        "text" : "argentinian",
+        "range" : {
+          "start" : 22,
+          "end" : 33
+        },
+        "slot_id" : "3BnGYp04F"
+      }, {
+        "text" : ", please",
+        "range" : {
+          "start" : 33,
+          "end" : 41
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i'm only interested in the ",
+        "range" : {
+          "start" : 0,
+          "end" : 27
+        }
+      }, {
+        "text" : "australian",
+        "range" : {
+          "start" : 27,
+          "end" : 37
+        },
+        "slot_id" : "3BnGYp04F",
+        "from_autotagging" : true
+      }, {
+        "text" : " calendar, please",
+        "range" : {
+          "start" : 37,
+          "end" : 54
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "use the ",
+        "range" : {
+          "start" : 0,
+          "end" : 8
+        }
+      }, {
+        "text" : "french",
+        "range" : {
+          "start" : 8,
+          "end" : 14
+        },
+        "slot_id" : "3BnGYp04F",
+        "from_autotagging" : true
+      }, {
+        "text" : " calendar in the future, please",
+        "range" : {
+          "start" : 14,
+          "end" : 45
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i only want you to tell me about the ",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      }, {
+        "text" : "christian",
+        "range" : {
+          "start" : 37,
+          "end" : 46
+        },
+        "slot_id" : "3BnGYp04F",
+        "from_autotagging" : true
+      }, {
+        "text" : " calendar, please",
+        "range" : {
+          "start" : 46,
+          "end" : 63
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "change the default calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 31
+        }
+      }, {
+        "text" : "freebsd",
+        "range" : {
+          "start" : 31,
+          "end" : 38
+        },
+        "slot_id" : "3BnGYp04F"
+      }, {
+        "text" : ", please",
+        "range" : {
+          "start" : 38,
+          "end" : 46
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please only use the ",
+        "range" : {
+          "start" : 0,
+          "end" : 20
+        }
+      }, {
+        "text" : "world",
+        "range" : {
+          "start" : 20,
+          "end" : 25
+        },
+        "slot_id" : "3BnGYp04F",
+        "from_autotagging" : true
+      }, {
+        "text" : " calendar",
+        "range" : {
+          "start" : 25,
+          "end" : 34
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "only use the ",
+        "range" : {
+          "start" : 0,
+          "end" : 13
+        }
+      }, {
+        "text" : "discordian",
+        "range" : {
+          "start" : 13,
+          "end" : 23
+        },
+        "slot_id" : "3BnGYp04F"
+      }, {
+        "text" : " calendar, please",
+        "range" : {
+          "start" : 23,
+          "end" : 40
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please change my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 29
+        }
+      }, {
+        "text" : "eu",
+        "range" : {
+          "start" : 29,
+          "end" : 31
+        },
+        "slot_id" : "3BnGYp04F"
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please adjust my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 29
+        }
+      }, {
+        "text" : "birthdays",
+        "range" : {
+          "start" : 29,
+          "end" : 38
+        },
+        "slot_id" : "3BnGYp04F",
+        "from_autotagging" : true
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please modify my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 29
+        }
+      }, {
+        "text" : "all",
+        "range" : {
+          "start" : 29,
+          "end" : 32
+        },
+        "slot_id" : "3BnGYp04F",
+        "from_autotagging" : true
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please switch my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 29
+        }
+      }, {
+        "text" : "australia",
+        "range" : {
+          "start" : 29,
+          "end" : 38
+        },
+        "slot_id" : "3BnGYp04F",
+        "from_autotagging" : true
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "please turn my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 27
+        }
+      }, {
+        "text" : "debian",
+        "range" : {
+          "start" : 27,
+          "end" : 33
+        },
+        "slot_id" : "3BnGYp04F",
+        "from_autotagging" : true
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "turn my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 20
+        }
+      }, {
+        "text" : "russian",
+        "range" : {
+          "start" : 20,
+          "end" : 27
+        },
+        "slot_id" : "3BnGYp04F"
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "switch my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 22
+        }
+      }, {
+        "text" : "croatian",
+        "range" : {
+          "start" : 22,
+          "end" : 30
+        },
+        "slot_id" : "3BnGYp04F"
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "modify my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 22
+        }
+      }, {
+        "text" : "history",
+        "range" : {
+          "start" : 22,
+          "end" : 29
+        },
+        "slot_id" : "3BnGYp04F"
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "adjust my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 22
+        }
+      }, {
+        "text" : "freebsd",
+        "range" : {
+          "start" : 22,
+          "end" : 29
+        },
+        "slot_id" : "3BnGYp04F"
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "change my calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 22
+        }
+      }, {
+        "text" : "ukrainian",
+        "range" : {
+          "start" : 22,
+          "end" : 31
+        },
+        "slot_id" : "3BnGYp04F"
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i'm only interested in the ",
+        "range" : {
+          "start" : 0,
+          "end" : 27
+        }
+      }, {
+        "text" : "pagan",
+        "range" : {
+          "start" : 27,
+          "end" : 32
+        },
+        "slot_id" : "3BnGYp04F"
+      }, {
+        "text" : " calendar",
+        "range" : {
+          "start" : 32,
+          "end" : 41
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "use the ",
+        "range" : {
+          "start" : 0,
+          "end" : 8
+        }
+      }, {
+        "text" : "german",
+        "range" : {
+          "start" : 8,
+          "end" : 14
+        },
+        "slot_id" : "3BnGYp04F"
+      }, {
+        "text" : " calendar in the future",
+        "range" : {
+          "start" : 14,
+          "end" : 37
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "i only want you to tell me about the ",
+        "range" : {
+          "start" : 0,
+          "end" : 37
+        }
+      }, {
+        "text" : "dutch",
+        "range" : {
+          "start" : 37,
+          "end" : 42
+        },
+        "slot_id" : "3BnGYp04F"
+      }, {
+        "text" : " calendar",
+        "range" : {
+          "start" : 42,
+          "end" : 51
+        }
+      } ]
+    }, {
+      "data" : [ {
+        "text" : "change the default calendar to ",
+        "range" : {
+          "start" : 0,
+          "end" : 31
+        }
+      }, {
+        "text" : "belgian",
+        "range" : {
+          "start" : 31,
+          "end" : 38
+        },
+        "slot_id" : "3BnGYp04F"
+      } ]
+    } ]
+  },
+  "id" : "intent_KMwkyXB78z9r",
+  "config" : {
+    "displayName" : "ChangeDefaultCalendar",
+    "name" : "ChangeDefaultCalendar",
+    "description" : "The user asks to change the default calendar.",
+    "language" : "en",
+    "slots" : [ {
+      "name" : "calendar_file",
+      "id" : "3BnGYp04F",
+      "entityId" : "entity_O0AdvDEelrz",
+      "missingQuestion" : "Which calendar do you want to set as the default calendar?",
+      "required" : true
+    } ],
+    "exampleQueries" : [ "turn my calendar to thai, please", "switch my calendar to lord of the rings, please", "modify my calendar to german, please", "adjust my calendar to holidays, please", "change my calendar to argentinian, please", "i'm only interested in the australian calendar, please", "use the french calendar in the future, please", "i only want you to tell me about the christian calendar, please", "change the default calendar to freebsd, please", "please only use the world calendar" ]
+  }
+}
